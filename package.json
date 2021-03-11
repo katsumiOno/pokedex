@@ -8,6 +8,6 @@
     "packages": ["packages/*"]
   },
   "scripts": {
-    "start": "yarn workspace @pokedex/calc start"
+    "start": "yarn workspace @pokedex/frontend start"
   }
 }
