@@ -1,0 +1,10 @@
+scalar Date
+
+type Query {
+  me: Pokemon
+}
+
+type Pokemon {
+  id: ID!
+  nome: String!
+}
