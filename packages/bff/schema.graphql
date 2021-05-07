@@ -1,0 +1,17 @@
+scalar Date
+
+type Query {
+  pokemon(id: ID!, name: String): Pokemon
+}
+
+type Stats {
+  baseStat: Int!
+  name: String!
+}
+
+type Pokemon {
+  id: ID!
+  nome: String!
+  types: [String]!
+  stats: [Stats]!
+}
