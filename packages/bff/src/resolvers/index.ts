@@ -1,7 +1,9 @@
 import { loadPokemon } from "./pokemonResolvers";
 
 const QueryType = {
-  me: loadPokemon,
+  pokemon(parent: null, args: {id: number, name?: string}) {
+    return loadPokemon(args.id, args.name);
+  }
 };
 
 export const resolvers = {
