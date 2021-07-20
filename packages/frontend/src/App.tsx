@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { PokedexCover } from './components/pokedexCover/pokedexCover';
 
 function App() {
   const [isPokedexOpen, setPokedexOpen] = useState(false);
@@ -10,13 +11,7 @@ function App() {
   
   return (
     <div id="pokedex">
-      <div id="cover" className={`page odd cover11 ${isPokedexOpen ? "turn" : null}`}>
-        <div className="teste"></div>
-        <div className="corpo">
-          <span className="arrow-right" onClick={handleToggle}></span>
-          <span className="bar-bottom"></span>
-        </div>
-      </div>
+      <PokedexCover isOpen={isPokedexOpen} onOpen={handleToggle} />
       <div id="right-container" className={`page even cover_back11 ${isPokedexOpen ? "turn" : null}`}>
         
           <div className="teste"></div>
